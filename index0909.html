@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Restaurant</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+    nav {
+        background-color: #444;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+    }
+    nav a:hover {
+        background-color: #555;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+    }
+    section {
+        margin-bottom: 40px;
+    }
+    h2 {
+        color: #333;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .gallery img {
+        width: 300px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .gallery img:hover {
+        transform: scale(1.1);
+    }
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ccc;
+        padding: 10px 0;
+    }
+    .reservation-form input,
+    .reservation-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .reservation-form button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Bahidar Ghar</h1>
+</header>
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#contact">Contact</a>
+</nav>
+<div class="container">
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <span>MOMO</span>
+            <span>RS140-RS160</span>
+        </div>
+        <div class="menu-item">
+            <span>chowimene</span>
+            <span>RS</span>
+        </div>
+        <div class="menu-item">
+            <span>Special Dish </span>
+            <span></span>
+    </div> 
+    <div class="menu-item">
+        <span>Special Dish </span>
+        <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div> 
+<div class="menu-item">
+<span>Special Dish </span>
+<span></span>
+</div>
+<div class="menu-item">
+<span>Special Dish </span>
+<span></span>
+</div>
+<div class="menu-item">
+<span>Special Dish </span>
+<span></span>
+</div>
+<div class="menu-item">
+<span>Special Dish </span>
+<span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div>
+<div class="menu-item">
+    <span>Special Dish </span>
+    <span></span>
+</div> 
+<div class="menu-item">
+<span>Special Dish </span>
+<span></span>
+</div>
+<div class="menu-item">
+<span>Special Dish </span>
+<span></span>
+</div>
+<div class="menu-item">
+<span>Special Dish </span>
+<span></span>
+</div>
+    </section>
+    <section id="about">
+        <h2>About</h2>
+        <p>We are proud to anounce that this is our website.
+        and we are alao very thakful for all our supporters.
+        </p>
+    </section>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROeSW2NBcVeaKmZ8zDxTG9y1tV33RwuiIHaQ&usqp=CAU" alt="Special dish 1">
+            <img src="https://www.insidehimalayas.com/wp-content/uploads/2015/05/newari-food.jpg" alt="Special dish 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlzTSTMxZ0JFwJugmvsMjnsd-CRez5a9A9I7BRUjknMO0Sw1glq3tve5fihbw2HHIQcFM&usqp=CAU" alt="Special dish 3">
+        </div>
+    </section>
+    <section id="reservation">
+        <h2>Reservation</h2>
+        <form class="reservation-form">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone" required>
+            <textarea placeholder="Additional Message"></textarea>
+            <button type="submit">Make Reservation</button>
+        </form>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>123 Main St, City, State, Zip</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: info@restaurant.com</p>
+    </section>
+</div>
+
+<script>
+    // JavaScript for making the reservation form interactive
+    document.querySelector('.reservation-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        const name = this.querySelector('input[name="name"]').value;
+        const email = this.querySelector('input[name="email"]').value;
+        const phone = this.querySelector('input[name="phone"]').value;
+        const message = this.querySelector('textarea').value;
+        
+        // Here you can add code to send the reservation details to your server or perform any other action
+        
+        alert(`Reservation Details:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`);
+        
+        // Optional: Reset the form after submission
+        this.reset();
+    });
+</script>
+</body>
+</html>
